@@ -1,5 +1,5 @@
 {{outlet}}
 
 {{#each model as |listing|}}
-   <li>{{listing.start_date}}</li>
+   <li>{{link-to listing.description "listings.listing" listing}}</li>
 {{/each}}
