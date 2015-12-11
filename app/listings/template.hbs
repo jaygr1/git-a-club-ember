@@ -1,5 +1,10 @@
-{{outlet}}
-
+<div class='row'>
+  <div class="col-xs-6">
 {{#each model as |listing|}}
    <li>{{link-to listing.description "listings.listing" listing}}</li>
 {{/each}}
+  </div>
+  <div class="col-xs-6">
+{{outlet}}
+  </div>
+</div>
