@@ -11,6 +11,11 @@ Router.map(function() {
       path: ':listing_id'
     });
   });
+  this.route('clubs', function(){
+    this.route('club', {
+      path: ':club_id'
+  });
 });
 
+});
 export default Router;
