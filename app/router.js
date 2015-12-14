@@ -15,7 +15,13 @@ Router.map(function() {
     this.route('club', {
       path: ':club_id'
   });
-});
+    this.route('new');
+  });
 
+  this.route('suppliers', function() {
+    this.route('supplier', {
+      path: ':supplier_id'
+    });
+  });
 });
 export default Router;

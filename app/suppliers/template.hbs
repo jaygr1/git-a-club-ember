@@ -1,0 +1,10 @@
+<div class='row'>
+  <div class="col-xs-6">
+{{#each model as |supplier|}}
+   <li>{{link-to supplier.user_id "suppliers.supplier" supplier}}</li>
+{{/each}}
+  </div>
+  <div class="col-xs-6">
+{{outlet}}
+  </div>
+</div>
